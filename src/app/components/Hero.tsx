@@ -15,7 +15,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
             Colin OMeara
           </h3>
           <p className="text-slate-300 text-lg max-w-xl mx-auto">
-            Push your fitness further with our mix of facilities, and we'll
+            Push your fitness further with our mix of facilities, and we&apos;ll
             support you with advice on new and better ways to train.
           </p>
           <div className="mt-8">

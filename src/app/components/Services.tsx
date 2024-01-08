@@ -59,7 +59,7 @@ const Services: FunctionComponent<ServicesProps> = () => {
                   <div
                     className="services-item bg-black p-8 sm:p-16 text-white"
                     style={{
-                      height: "330px	",
+                      height: "330px",
                     }}
                   >
                     <FaRunning className="text-red-600 text-4xl mb-1" />

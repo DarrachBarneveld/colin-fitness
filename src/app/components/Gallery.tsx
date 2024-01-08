@@ -24,8 +24,8 @@ const Gallery: FunctionComponent<GalleryProps> = () => {
           Gallery
         </h2>
         <p className="text-slate-400 max-w-xl mx-auto">
-          Push your fitness further with our mix of facilities and we'll support
-          you with advice on new and better ways to train.
+          Push your fitness further with our mix of facilities and we&apos;ll
+          support you with advice on new and better ways to train.
         </p>
       </div>
       <div className="grid md:grid-cols-5 grid-cols-2 justify-center mx-auto mt-8">
