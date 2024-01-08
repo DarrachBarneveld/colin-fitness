@@ -56,8 +56,8 @@ const Testimonial: FunctionComponent<TestimonialProps> = () => {
         <div className="w-fit relative rounded shadow dark:shadow-gray-800 m-2 p-6 bg-white dark:bg-slate-900 flex flex-col items-center">
           <FaQuoteLeft className="text-red-500 text-2xl" />
           <p className="text-slate-800">
-            "It seems that only fragments of the original text remain in the
-            Lorem Ipsum texts used today."
+            &quot;It seems that only fragments of the original text remain in
+            the Lorem Ipsum texts used today.&quot;
           </p>
           <ul className="list-none flex mb-0 text-amber-400 mt-3">
             <FaStar />
