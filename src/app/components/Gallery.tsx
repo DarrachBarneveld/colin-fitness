@@ -1,10 +1,14 @@
-import { FunctionComponent } from "react";
+"use client";
+
+import { FunctionComponent, useState } from "react";
 import sampleImage from "@/public/assets/images/01.jpg";
 import Image from "next/image";
+import Modal from "./ui/Modal";
 
 interface GalleryProps {}
 
 const Gallery: FunctionComponent<GalleryProps> = () => {
+  const [openModal, setOpenModal] = useState(false);
   const images = [
     "assets/images/gym/01.jpg",
     "assets/images/gym/02.jpg",
@@ -19,6 +23,8 @@ const Gallery: FunctionComponent<GalleryProps> = () => {
   ];
   return (
     <section id="gallery" className="p-8">
+      {openModal && <Modal openModal={setOpenModal} />}
+
       <div className="grid grid-cols-1 pb-8 text-center">
         <h2 className="mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold text-white">
           Gallery
@@ -34,13 +40,16 @@ const Gallery: FunctionComponent<GalleryProps> = () => {
             key={index}
             className="group relative block overflow-hidden transition-all duration-500"
           >
-            <div className="transition-all duration-500 group-hover:scale-105 block">
+            <button
+              onClick={() => setOpenModal(true)}
+              className="transition-all duration-500 group-hover:scale-105 block"
+            >
               <Image
                 src={sampleImage}
                 className=""
                 alt={`Gym Image ${index + 1}`}
               />
-            </div>
+            </button>
           </div>
         ))}
       </div>

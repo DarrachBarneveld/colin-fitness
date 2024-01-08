@@ -21,7 +21,7 @@ const Testimonial: FunctionComponent<TestimonialProps> = () => {
     slidesToScroll: 4,
     initialSlide: 0,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 4000,
     responsive: [
       {
         breakpoint: 1024,
@@ -74,7 +74,7 @@ const Testimonial: FunctionComponent<TestimonialProps> = () => {
             className="h-14 w-14 rounded-full shadow-md mx-auto object-cover border-2 border-red-500"
             alt="user image"
           />
-          <h6 className="mt-2 font-semibold">Senor Tequilla</h6>
+          <h6 className="mt-2 font-semibold text-slate-50">Senor Tequilla</h6>
           <span className="text-slate-400 text-sm">Manager</span>
         </div>
       </div>
