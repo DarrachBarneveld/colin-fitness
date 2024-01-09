@@ -23,7 +23,7 @@ const Hero: FunctionComponent<HeroProps> = () => {
               href=""
               data-type="youtube"
               data-id="yba7hPeTSjk"
-              className="btn bg-red-600 hover:bg-red-700 border-red-600 hover:border-red-700 text-white rounded-full align-middle lightbox p-1 pl-4"
+              className="btn bg-red-600 hover:bg-red-700 border-red-600 hover:border-red-700 text-white rounded-full align-middle p-1 pl-4"
             >
               3:07 Intro Video
               <span className="btn btn-icon bg-slate-600 hover:bg-slate-700 border-slate-600 hover:border-slate-700 text-white rounded-full ml-2">

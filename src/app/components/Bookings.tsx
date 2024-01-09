@@ -2,9 +2,7 @@
 
 import { addDays } from "date-fns";
 import { FunctionComponent, useState } from "react";
-import DatePicker from "react-datepicker";
-
-import "react-datepicker/dist/react-datepicker.css";
+import BookCallBtn from "./BookCallBtn";
 
 interface BookingsProps {}
 
@@ -25,13 +23,7 @@ const Bookings: FunctionComponent<BookingsProps> = () => {
         </p>
       </div>
       <div className="flex justify-center items-center p-4">
-        <DatePicker
-          className="mx-auto"
-          selected={startDate}
-          onChange={(date) => setStartDate(date as Date)}
-          excludeDates={[addDays(new Date(), 1), addDays(new Date(), 5)]}
-          inline
-        />
+        <BookCallBtn className="flex items-center p-3 gap-2 bg-red-600 hover:bg-red-700 border-red-600 hover:border-red-700 text-white rounded-full align-middle" />
       </div>
     </section>
   );
