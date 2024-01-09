@@ -21,11 +21,15 @@ const BookCallBtn: FunctionComponent<BookCallBtnProps> = ({ className }) => {
     }
   }, [show]);
 
+  //   btn btn-icon bg-slate-600 hover:bg-slate-700 border-slate-600 hover:border-slate-700 text-white rounded-full ml-2
+
   return (
     <>
       <button className={className} onClick={() => toggle(!show)}>
-        <FaPhone />
         Book an Appointment
+        <span className="btn btn-icon bg-slate-600 hover:bg-slate-700 border-slate-600 hover:border-slate-700 text-white rounded-full ml-2">
+          <FaPhone className="text-xl" />
+        </span>
       </button>
       <dialog
         ref={ref}
