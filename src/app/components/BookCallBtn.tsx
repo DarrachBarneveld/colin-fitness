@@ -42,6 +42,7 @@ const BookCallBtn: FunctionComponent<BookCallBtnProps> = ({ className }) => {
             e.clientY > dialogDimensions.bottom
           ) {
             ref.current.close();
+            toggle(false);
           }
         }}
         style={{
