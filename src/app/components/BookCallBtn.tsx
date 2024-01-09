@@ -21,8 +21,6 @@ const BookCallBtn: FunctionComponent<BookCallBtnProps> = ({ className }) => {
     }
   }, [show]);
 
-  //   btn btn-icon bg-slate-600 hover:bg-slate-700 border-slate-600 hover:border-slate-700 text-white rounded-full ml-2
-
   return (
     <>
       <button className={className} onClick={() => toggle(!show)}>
@@ -49,10 +47,7 @@ const BookCallBtn: FunctionComponent<BookCallBtnProps> = ({ className }) => {
             toggle(false);
           }
         }}
-        style={{
-          width: "50%",
-          height: "800px",
-        }}
+        className="h-full w-full md:w-1/2 rounded-lg shadow-md"
       >
         <iframe
           src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ0Z8nXXEjmcDHwKEie6KFeNLSy6nyAy-ITrW7XpUSHNff52QMTdyhOjf-eNMxsFjqgS7OvXq7B1?gv=true"
